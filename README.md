@@ -3,8 +3,10 @@ Flexibly-Structured Model for Task-Oriented Dialogues
 
 This repository contains the code of the SIGDIAL 2019 paper:
 
-Flexibly-Structured Model for Task-Oriented Dialogues
 Lei Shu, Piero Molino, Mahdi Namazifar, Hu Xu, Bing Liu, Huaixiu Zheng, Gokhan Tur
+
+[Flexibly-Structured Model for Task-Oriented Dialogues](https://arxiv.org/abs/1908.02402)
+
 
 Instructions
 ------------
