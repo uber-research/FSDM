@@ -7,9 +7,18 @@ Lei Shu, Piero Molino, Mahdi Namazifar, Hu Xu, Bing Liu, Huaixiu Zheng, Gokhan T
 
 [Flexibly-Structured Model for Task-Oriented Dialogues](https://arxiv.org/abs/1908.02402)
 
+Here is the [slides](https://leishu02.github.io/FSDM_SIGDIAL2019.pdf).
 
-Instructions
-------------
+## Problem to Solve
+We proposes a novel end-to-end architecture for task-oriented dialogue systems.
+It is based on a simple and practical yet very effective sequence-to-sequence approach, where language understanding and state tracking tasks are modeled jointly with a structured copy-augmented sequential decoder and a multi-label decoder for each slot.
+The policy engine and language generation tasks are modeled jointly following that.
+The copy-augmented sequential decoder deals with new or unknown values in the conversation, while the multi-label decoder combined with the sequential decoder ensures the explicit assignment of values to slots.
+On the generation part, slot binary classifiers are used to improve performance.
+This architecture is scalable to real-world scenarios and is shown through an empirical evaluation to achieve state-of-the-art performance on both the Cambridge Restaurant dataset and the Stanford in-car assistant dataset.
+
+
+##Instructions
 
 Please download glove embedding `glove.6B.50d.txt` and place it under `data/glove/`
 
@@ -30,9 +39,14 @@ for kvret dataset: `python model.py -mode adjust -data kvret`
 In order to configure hypermeters change the values in `config.py` or use the `-cfg` argument:
 `python model.py -mode adjust -data camrest -cfg epoch_num=50 beam_search=True`
 
-### Citing
+### Dataset
+We evaluate the FSDM on two datasets: Cambridge Restaurant dataset (CamRest) and the Stanford in-car assistant dataset (KVRET).
+We place them under `data/` folder. If you use the data, please also cite their papers.
+
+## Citing
 
 If you use the code, please cite:
+
 ```
 @misc{shu2019flexiblystructured,
     title={Flexibly-Structured Model for Task-Oriented Dialogues},
