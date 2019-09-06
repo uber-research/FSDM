@@ -18,7 +18,7 @@ On the generation part, slot binary classifiers are used to improve performance.
 This architecture is scalable to real-world scenarios and is shown through an empirical evaluation to achieve state-of-the-art performance on both the Cambridge Restaurant dataset and the Stanford in-car assistant dataset.
 
 
-##Instructions
+## Instructions
 
 Please download glove embedding `glove.6B.50d.txt` and place it under `data/glove/`
 
