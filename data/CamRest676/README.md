@@ -1,12 +1,17 @@
 #  Copyright Cambridge Dialogue Systems Group, 2016 #
 
+CamRest676 dataset contains the following three json files: 
 
-CamRest676 dataset contains the following three json files: 1. CamRest676.json: the woz dialogue dataset, which contains the conversion from users and wizards, as well as a set of coarse labels for each user turn.
+1. CamRest676.json: the woz dialogue dataset, which contains the conversion from users and wizards, as well as a set of coarse labels for each user turn.
+
 2. CamRestDB.json: the Cambridge restaurant database file, containing restaurants in the Cambridge UK area and a set of attributes.
+
 3. The ontology file, specific all the values the three informable slots can take.
 
 
-The dataset was used in the following papers, if you use the dataset please cite them: @article{wenN2N16,
+The dataset was used in the following papers, if you use the dataset please cite them: 
+```
+@article{wenN2N16,
 Author = {Wen, Tsung-Hsien and Vandyke, David and Mrk{\v{
 s
 }
@@ -22,7 +27,8 @@ month={
 April
 }
 }
-
+```
+```
 @article{
 wencond16,
 Author = {
@@ -37,3 +43,4 @@ arXiv preprint: 1606.03352
 year={2016},
 month={June}
 }
+```
