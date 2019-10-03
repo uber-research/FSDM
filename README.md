@@ -57,3 +57,7 @@ If you use the code, please cite:
     primaryClass={cs.CL}
 }
 ```
+### Note
+
+The CamRest676 and Stanford in-car assistant datasets are provided in a preprocessed JSON format, but they belong to the original authors.
+
