@@ -20,8 +20,13 @@ This architecture is scalable to real-world scenarios and is shown through an em
 
 ## Instructions
 
-Please download glove embedding `glove.6B.50d.txt` and place it under `data/glove/`
+Please download [glove embedding](https://nlp.stanford.edu/projects/glove/) `glove.6B.50d.txt` and place it under `data/glove/`
 
+### Dataset
+We evaluate the FSDM on two datasets: [Cambridge Restaurant dataset (CamRest)](https://www.repository.cam.ac.uk/handle/1810/260970) and the [Stanford in-car assistant dataset (KVRET)](https://nlp.stanford.edu/blog/a-new-multi-turn-multi-domain-task-oriented-dialogue-dataset/).
+Please download and place them under `data/CamRest676` and `data/kvret` respectively.
+
+ 
 ### Model training
 for camrest dataset: `python model.py -mode train -data camrest`
 for kvret dataset: `python model.py -mode train -data kvret`
@@ -39,9 +44,6 @@ for kvret dataset: `python model.py -mode adjust -data kvret`
 In order to configure hypermeters change the values in `config.py` or use the `-cfg` argument:
 `python model.py -mode adjust -data camrest -cfg epoch_num=50 beam_search=True`
 
-### Dataset
-We evaluate the FSDM on two datasets: Cambridge Restaurant dataset (CamRest) and the Stanford in-car assistant dataset (KVRET).
-We place them under `data/` folder. If you use the data, please also cite their papers.
 
 ## Citing
 
@@ -57,7 +59,5 @@ If you use the code, please cite:
     primaryClass={cs.CL}
 }
 ```
-### Note
 
-The CamRest676 and Stanford in-car assistant datasets are provided in a preprocessed JSON format, but they belong to the original authors.
 
